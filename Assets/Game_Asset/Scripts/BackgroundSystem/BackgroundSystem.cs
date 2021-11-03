@@ -21,17 +21,16 @@ namespace Game_Asset.Scripts.BackgroundSystem
         {
             if (!Container) throw new NullReferenceException("Container is null!");
 
-            for (int i = 0; i < Container.Data.Count; i++)
+            foreach (var data in Container.Data)
             {
-                GameObject go = new GameObject($"{Names} {i + 1}");
+                GameObject go = new GameObject(Names);
                 go.transform.parent = _selfTransform;
                 
                 go.AddComponent<SpriteRenderer>();
                 SpriteRenderer sr = go.GetComponent<SpriteRenderer>();
-                sr.sprite = Container.Data[i].sprite;
+                sr.sprite = data.sprite;
 
                 _pull.AddObject(sr);
-                
             }
         }
     }
