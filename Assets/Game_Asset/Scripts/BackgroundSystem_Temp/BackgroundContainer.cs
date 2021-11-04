@@ -6,6 +6,6 @@ namespace Game_Asset.Scripts.BackgroundSystem
     [CreateAssetMenu(menuName = "BGS/Container")]
     public class BackgroundContainer : ScriptableObject
     {
-        public List<BackgroundData> Data;
+        public List<BackgroundLayer> layers;
     }
 }
