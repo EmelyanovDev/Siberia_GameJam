@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Game_Asset.Scripts.Conundrums.Walls
 {
-    public class Wall : MonoBehaviour
+    public class MoverTween : Conundrum
     {
         [SerializeField] private float _topOffset;
         [SerializeField] private float _moveSpeed;
@@ -16,9 +16,10 @@ namespace Game_Asset.Scripts.Conundrums.Walls
 
         private void Start()
         {
+            _targetPosition = transform.position;
+            
             _bottomPosition = transform.position;
             _topPosition = _bottomPosition + Vector3.up * _topOffset;
-            _targetPosition = transform.position;
         }
 
         public void SetTargetPosition()
@@ -33,6 +34,11 @@ namespace Game_Asset.Scripts.Conundrums.Walls
         {
             if (transform.position != _targetPosition)
                 transform.position = Vector3.MoveTowards(transform.position, _targetPosition, _moveSpeed * Time.deltaTime);
+        }
+
+        public override void Activate()
+        {
+            SetTargetPosition();
         }
     }
 }

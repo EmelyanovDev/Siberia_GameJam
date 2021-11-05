@@ -1,24 +1,17 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 
-namespace Game_Asset.Scripts.Conundrums.Walls
+namespace Game_Asset.Scripts.Conundrums
 {
     public class Button : MonoBehaviour
     {
-        [SerializeField] private Wall[] _controlledWalls;
-
-        private void Update()
-        {
-            if(Input.GetKeyDown(KeyCode.Q))
-                OnButtonClick();
-        }
+        [SerializeField] private Conundrum[] controlled;
 
         public void OnButtonClick()
         {
-            foreach (var controlledWall in _controlledWalls)
-            {
-                controlledWall.SetTargetPosition();
-            }
+            foreach (var element in controlled) 
+                element.Activate();
         }
     }
 }
