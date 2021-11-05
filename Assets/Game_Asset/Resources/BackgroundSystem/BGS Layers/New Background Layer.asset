@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: New Background Layer
   m_EditorClassIdentifier: 
   data:
-  - sprite: {fileID: 21300000, guid: bf808bf758905c04c9d229beb2940edd, type: 3}
+  - sprite: {fileID: 21300000, guid: 8a7c892013f3102438871a1562af51a0, type: 3}
     offset: 0
-  - sprite: {fileID: 21300000, guid: bf808bf758905c04c9d229beb2940edd, type: 3}
+  - sprite: {fileID: 21300000, guid: 8a7c892013f3102438871a1562af51a0, type: 3}
     offset: 0
-  - sprite: {fileID: 21300000, guid: bf808bf758905c04c9d229beb2940edd, type: 3}
+  - sprite: {fileID: 21300000, guid: 8a7c892013f3102438871a1562af51a0, type: 3}
     offset: 0
   position: {x: 0, y: 0, z: 0}
   slowerBy: 100
