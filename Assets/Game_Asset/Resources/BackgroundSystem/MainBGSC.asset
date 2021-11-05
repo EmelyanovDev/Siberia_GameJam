@@ -12,10 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef5eb473fb69a6b4d96b7b67122ab813, type: 3}
   m_Name: MainBGSC
   m_EditorClassIdentifier: 
-  Data:
-  - sprite: {fileID: 0}
-    offset: 0
-  - sprite: {fileID: 0}
-    offset: 0
-  - sprite: {fileID: 0}
-    offset: 0
+  layers:
+  - {fileID: 11400000, guid: 4e894ec415e9e7640b78b7557111e3f1, type: 2}
