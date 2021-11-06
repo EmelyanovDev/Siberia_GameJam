@@ -7,13 +7,11 @@ namespace Game_Asset.Scripts.Conundrums.Walls
         [SerializeField] private Conundrum[] controlled;
         [SerializeField] private Trigger _trigger;
         
-        public void OnMouseDown()
+        private void OnMouseDown()
         {
             if (!_trigger.IsTrigger) return;
             foreach (var element in controlled) 
                 element.Activate();
         }
-
-        
     }
 }

@@ -55,7 +55,7 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 120
@@ -123,7 +123,7 @@ TextureImporter:
         width: 6854
         height: 1506
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -144,7 +144,7 @@ TextureImporter:
         width: 2865
         height: 1706
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -160,13 +160,13 @@ TextureImporter:
       name: Forest_2
       rect:
         serializedVersion: 2
-        x: 4093
+        x: 4094
         y: 1064
         width: 891
         height: 757
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 676, y: 29, z: 196, w: 92}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -186,7 +186,7 @@ TextureImporter:
         width: 277
         height: 754
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
