@@ -4,9 +4,9 @@ namespace Game_Asset.Scripts.PostEffects
 {
     public class GlitchFilter : SimpleFilter
     {
-        [SerializeField, Range(0, 1f)] private float colorIntensity = 1f;
-        [SerializeField, Range(0, 1)] private float noiseIntensity = 1f;
-        [SerializeField, Range(0, 1)] private float flipIntensity = 1f;
+        [Range(0, 1f)] public float colorIntensity = 1f;
+        [Range(0, 1f)] public float noiseIntensity = 1f;
+        [Range(0, 1f)] public float flipIntensity = 1f;
 
         [SerializeField] private Texture2D noiseTexture;
 

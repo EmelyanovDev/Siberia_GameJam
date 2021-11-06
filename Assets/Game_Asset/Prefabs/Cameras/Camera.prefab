@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 1657651409}
   - component: {fileID: 8938361786157258259}
   - component: {fileID: 2335608862024116986}
+  - component: {fileID: 1339455200043870097}
   - component: {fileID: 2104134735171798289}
   m_Layer: 0
   m_Name: Camera
@@ -162,11 +163,29 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   effectShader: {fileID: 4800000, guid: be82e332d191408884b5ede7a1935cda, type: 3}
-  useFilter: 1
-  _colorIntensity: 0.159
-  _noiseIntensity: 1
-  _noiseTexture: {fileID: 2800000, guid: e330b8bccf2573b4cb792a21bd983045, type: 3}
-  _flipIntensity: 1
+  useFilter: 0
+  colorIntensity: 1
+  noiseIntensity: 1
+  flipIntensity: 1
+  noiseTexture: {fileID: 0}
+--- !u!114 &1339455200043870097
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4582229038094539905}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd393d3048be4a9b8c576bf4e3e094d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  effectShader: {fileID: 4800000, guid: be82e332d191408884b5ede7a1935cda, type: 3}
+  useFilter: 0
+  colorIntensity: 1
+  noiseIntensity: 1
+  flipIntensity: 1
+  noiseTexture: {fileID: 0}
 --- !u!114 &2104134735171798289
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -180,7 +199,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   effectShader: {fileID: 4800000, guid: 715d751cbc57c224baf0a6c5b25f4afd, type: 3}
-  useFilter: 1
+  useFilter: 0
   offset: {x: 1.1, y: -0.5}
   exp: 10
   color: {r: 0, g: 0, b: 0, a: 0}
