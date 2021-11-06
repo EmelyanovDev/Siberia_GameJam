@@ -7,7 +7,7 @@ public class StoneTrigger : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.gameObject.layer == LayerMask.NameToLayer("Character"))
+        if(other.gameObject.layer == LayerMask.NameToLayer("TriggerInitiator"))
             _stoneRigidBody.bodyType = RigidbodyType2D.Dynamic;
     }
 }

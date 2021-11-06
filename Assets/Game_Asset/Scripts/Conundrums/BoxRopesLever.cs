@@ -1,11 +1,12 @@
 using System;
 using System.Collections;
+using Game_Asset.Scripts.Conundrums;
 using UnityEngine;
 
 [RequireComponent(typeof(Animator))]
 public class BoxRopesLever : MonoBehaviour
 {
-    private bool _isTrigger;
+    [SerializeField] private Trigger _trigger;
 
     private Animator _leverAnimator;
 
@@ -22,20 +23,8 @@ public class BoxRopesLever : MonoBehaviour
 
     public void OnMouseDown()
     {
-        if (!_isTrigger) return;
+        if (!_trigger.IsTrigger) return;
         _leverAnimator.SetTrigger("PlayActivation");
-    }
-    
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.gameObject.layer == LayerMask.NameToLayer("Character"))
-            _isTrigger = true;
-    }
-
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.gameObject.layer == LayerMask.NameToLayer("Character"))
-            _isTrigger = false;
     }
 
     private void Update()
