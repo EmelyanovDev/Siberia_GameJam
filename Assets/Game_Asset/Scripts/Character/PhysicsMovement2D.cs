@@ -1,5 +1,7 @@
+using System;
 using UnityEngine;
 using UnityEngine.Events;
+#pragma warning disable 108,114
 
 namespace Game_Asset.Scripts.Character
 {
@@ -24,6 +26,8 @@ namespace Game_Asset.Scripts.Character
 		private bool _facingRight = true;
 		private Vector3 _velocity = Vector3.zero;
 
+		public float Velocity => _velocity.magnitude;
+
 		[Header("Events")]
 		[Space]
 
@@ -38,6 +42,8 @@ namespace Game_Asset.Scripts.Character
 		private void Awake()
 		{
 			_selfTransform = GetComponent<Transform>();
+			
+			if (!rigidbody2D) throw new NullReferenceException($"{nameof(rigidbody2D)} is null!");
 
 			onLandEvent ??= new UnityEvent();
 			onCrouchEvent ??= new BoolEvent();
