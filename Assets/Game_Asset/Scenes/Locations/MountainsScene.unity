@@ -636,7 +636,7 @@ AudioSource:
   m_GameObject: {fileID: 477831073}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 3832349853983398840, guid: fc3c1ef6e5ab8cf49b54b4959a10b6eb, type: 2}
   m_audioClip: {fileID: 8300000, guid: 00dcbe42005efc241912a223bf273583, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -2053,7 +2053,7 @@ AudioSource:
   m_GameObject: {fileID: 1029579897}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 3832349853983398840, guid: fc3c1ef6e5ab8cf49b54b4959a10b6eb, type: 2}
   m_audioClip: {fileID: 8300000, guid: aaaa90883f9f7aa46b84d4a2def68cde, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -2488,11 +2488,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4582229038094539966, guid: dcfddfb280ab33d4bbc9bc1b98620304, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -100.49701
+      value: -104.947685
       objectReference: {fileID: 0}
     - target: {fileID: 4582229038094539966, guid: dcfddfb280ab33d4bbc9bc1b98620304, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.686122
+      value: 1.686099
       objectReference: {fileID: 0}
     - target: {fileID: 4582229038094539966, guid: dcfddfb280ab33d4bbc9bc1b98620304, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2580,7 +2580,7 @@ AudioSource:
   m_GameObject: {fileID: 1770765638}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 3832349853983398840, guid: fc3c1ef6e5ab8cf49b54b4959a10b6eb, type: 2}
   m_audioClip: {fileID: 8300000, guid: a3c7ae36e922e8641931777cdeb28cf0, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -2895,7 +2895,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 321942079245502768, guid: 8b6c4587c21680b4bba85637aec7c99f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -20.099401
+      value: -20.989536
       objectReference: {fileID: 0}
     - target: {fileID: 321942079245502771, guid: 8b6c4587c21680b4bba85637aec7c99f, type: 3}
       propertyPath: target
@@ -2907,7 +2907,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 321942079446744178, guid: 8b6c4587c21680b4bba85637aec7c99f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -40.198803
+      value: -41.979073
       objectReference: {fileID: 0}
     - target: {fileID: 321942079446744189, guid: 8b6c4587c21680b4bba85637aec7c99f, type: 3}
       propertyPath: target
@@ -2979,7 +2979,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 321942080641029755, guid: 8b6c4587c21680b4bba85637aec7c99f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -10.049701
+      value: -10.494768
       objectReference: {fileID: 0}
     - target: {fileID: 321942081119436160, guid: 8b6c4587c21680b4bba85637aec7c99f, type: 3}
       propertyPath: target
@@ -2991,7 +2991,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 321942081119436161, guid: 8b6c4587c21680b4bba85637aec7c99f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 10.049701
+      value: 10.494768
       objectReference: {fileID: 0}
     - target: {fileID: 321942081119436161, guid: 8b6c4587c21680b4bba85637aec7c99f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3007,7 +3007,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 321942081243835179, guid: 8b6c4587c21680b4bba85637aec7c99f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -30.149103
+      value: -31.484306
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8b6c4587c21680b4bba85637aec7c99f, type: 3}
@@ -3196,7 +3196,7 @@ AudioSource:
   m_GameObject: {fileID: 2105570822}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 3832349853983398840, guid: fc3c1ef6e5ab8cf49b54b4959a10b6eb, type: 2}
   m_audioClip: {fileID: 8300000, guid: 949d9e3127ff0d34d9eab0980a81b147, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1

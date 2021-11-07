@@ -527,11 +527,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4582229038094539966, guid: dcfddfb280ab33d4bbc9bc1b98620304, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.3420293
+      value: -0.8829515
       objectReference: {fileID: 0}
     - target: {fileID: 4582229038094539966, guid: dcfddfb280ab33d4bbc9bc1b98620304, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.8237396
+      value: -1.8301889
       objectReference: {fileID: 0}
     - target: {fileID: 4582229038094539966, guid: dcfddfb280ab33d4bbc9bc1b98620304, type: 3}
       propertyPath: m_LocalPosition.z
@@ -766,7 +766,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 321942079245502768, guid: 8b6c4587c21680b4bba85637aec7c99f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.06710146
+      value: -0.044147573
       objectReference: {fileID: 0}
     - target: {fileID: 321942079245502768, guid: 8b6c4587c21680b4bba85637aec7c99f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -782,7 +782,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 321942079446744178, guid: 8b6c4587c21680b4bba85637aec7c99f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.2013044
+      value: -0.13244273
       objectReference: {fileID: 0}
     - target: {fileID: 321942079446744178, guid: 8b6c4587c21680b4bba85637aec7c99f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -870,7 +870,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 321942081119436161, guid: 8b6c4587c21680b4bba85637aec7c99f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.06710146
+      value: 0.044147573
       objectReference: {fileID: 0}
     - target: {fileID: 321942081119436161, guid: 8b6c4587c21680b4bba85637aec7c99f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -886,7 +886,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 321942081243835179, guid: 8b6c4587c21680b4bba85637aec7c99f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.13420293
+      value: -0.08829515
       objectReference: {fileID: 0}
     - target: {fileID: 321942081243835179, guid: 8b6c4587c21680b4bba85637aec7c99f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1264,7 +1264,7 @@ AudioSource:
   m_GameObject: {fileID: 617491817}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 3832349853983398840, guid: fc3c1ef6e5ab8cf49b54b4959a10b6eb, type: 2}
   m_audioClip: {fileID: 8300000, guid: 00dcbe42005efc241912a223bf273583, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -2198,7 +2198,7 @@ AudioSource:
   m_GameObject: {fileID: 1121761251}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 3832349853983398840, guid: fc3c1ef6e5ab8cf49b54b4959a10b6eb, type: 2}
   m_audioClip: {fileID: 8300000, guid: 949d9e3127ff0d34d9eab0980a81b147, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -2799,7 +2799,7 @@ AudioSource:
   m_GameObject: {fileID: 1300169236}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 3832349853983398840, guid: fc3c1ef6e5ab8cf49b54b4959a10b6eb, type: 2}
   m_audioClip: {fileID: 8300000, guid: a3c7ae36e922e8641931777cdeb28cf0, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -3364,7 +3364,7 @@ AudioSource:
   m_GameObject: {fileID: 1754353505}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 3832349853983398840, guid: fc3c1ef6e5ab8cf49b54b4959a10b6eb, type: 2}
   m_audioClip: {fileID: 8300000, guid: aaaa90883f9f7aa46b84d4a2def68cde, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -4221,7 +4221,7 @@ AudioSource:
   m_GameObject: {fileID: 2088048319}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 3832349853983398840, guid: fc3c1ef6e5ab8cf49b54b4959a10b6eb, type: 2}
   m_audioClip: {fileID: 8300000, guid: c82d47f3443d8b8478414e19353b1223, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
