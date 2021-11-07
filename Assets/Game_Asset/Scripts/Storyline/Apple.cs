@@ -1,4 +1,5 @@
 using Game_Asset.Scripts.Character;
+using Game_Asset.Scripts.GameManager;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
@@ -7,8 +8,7 @@ public class Apple : MonoBehaviour
 {
     [SerializeField] private float _jumpOffDelay;
     [SerializeField] private float _jumpFromPlayerForce;
-
-    [SerializeField] private KeyboardInput _playerKeyboardInput;
+    
     private Rigidbody2D _rigidbody;
     private CircleCollider2D _circleCollider;
 
@@ -33,7 +33,7 @@ public class Apple : MonoBehaviour
             _rigidbody.AddForce(Vector3.up * _jumpFromPlayerForce);
 
             _circleCollider.enabled = false;
-            _playerKeyboardInput.enabled = true;
+            GameMaster.Instance.AllowedControl();
         }
             
     }

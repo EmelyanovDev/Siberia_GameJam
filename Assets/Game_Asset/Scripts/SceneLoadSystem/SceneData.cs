@@ -1,5 +1,4 @@
-﻿using UnityEditor.SearchService;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace Game_Asset.Scripts.SceneLoadSystem
 {

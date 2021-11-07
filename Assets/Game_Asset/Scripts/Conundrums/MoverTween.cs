@@ -13,6 +13,10 @@ namespace Game_Asset.Scripts.Conundrums
         private Vector3 _bottomPosition;
         private Vector3 _topPosition;
 
+        private Vector3 _startPosition;
+
+        private void Awake() => _startPosition = transform.position;
+
         private void Start()
         {
             _targetPosition = transform.position;
@@ -24,6 +28,12 @@ namespace Game_Asset.Scripts.Conundrums
         public override void Activate()
         {
             SetTargetPosition();
+        }
+
+        public override void Reset()
+        {
+            transform.position = _startPosition;
+            Start();
         }
 
         private void Update()
