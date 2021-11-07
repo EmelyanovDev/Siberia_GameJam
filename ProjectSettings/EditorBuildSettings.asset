@@ -6,9 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Game_Asset/Scenes/DebugScenes/DebugSene2.unity
-    guid: dcaff9d1f87ae7943af9bc6b0bf627f9
+    path: Assets/Game_Asset/Scenes/Locations/MenusScene.unity
+    guid: a806ebedef1a57942aab4ba76840160d
   - enabled: 1
-    path: Assets/Game_Asset/Scenes/DebugScenes/DebugSene.unity
-    guid: 47d2dee85e144b44b957abefd31b8e7e
+    path: Assets/Game_Asset/Scenes/Locations/ForestScene.unity
+    guid: f1676c7b1e0cc9148aab7aee945c1c33
+  - enabled: 1
+    path: Assets/Game_Asset/Scenes/Locations/MountainsScene.unity
+    guid: 3d8264020ab21864da5acaf4e7866926
+  - enabled: 1
+    path: Assets/Game_Asset/Scenes/Locations/TempleScene.unity
+    guid: d3618a414f3963e42bfdfd5c28e58049
   m_configObjects: {}

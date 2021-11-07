@@ -151,10 +151,10 @@ TextureImporter:
       name: skotch_i_portal_1
       rect:
         serializedVersion: 2
-        x: 626
-        y: 182
-        width: 83
-        height: 77
+        x: 592
+        y: 162
+        width: 130
+        height: 130
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -172,10 +172,10 @@ TextureImporter:
       name: skotch_i_portal_2
       rect:
         serializedVersion: 2
-        x: 717
-        y: 203
-        width: 127
-        height: 103
+        x: 720
+        y: 190
+        width: 130
+        height: 130
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -193,10 +193,10 @@ TextureImporter:
       name: skotch_i_portal_3
       rect:
         serializedVersion: 2
-        x: 754
-        y: 105
-        width: 90
-        height: 60
+        x: 729
+        y: 70
+        width: 130
+        height: 130
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
