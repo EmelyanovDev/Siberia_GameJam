@@ -1,12 +1,12 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class NeutronStar : MonoBehaviour
+namespace Game_Asset.Scripts.Storyline
 {
-    private void OnTriggerEnter2D(Collider2D other)
+    public class NeutronStar : MonoBehaviour
     {
-        Destroy(gameObject);
+        private void OnTriggerEnter2D(Collider2D other)
+        {
+            Destroy(gameObject);
+        }
     }
 }

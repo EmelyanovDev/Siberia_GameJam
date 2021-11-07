@@ -1,17 +1,18 @@
-using System;
-using Game_Asset.Scripts.Conundrums;
 using UnityEngine;
 
-public class Closer : MonoBehaviour
+namespace Game_Asset.Scripts.Conundrums.Walls
 {
-    [SerializeField] private Conundrum[] _walls;
-    private void OnTriggerEnter2D(Collider2D other)
+    public class Closer : MonoBehaviour
     {
-        if (other.gameObject.layer == LayerMask.NameToLayer("Character"))
+        [SerializeField] private Conundrum[] _walls;
+        private void OnTriggerEnter2D(Collider2D other)
         {
-            foreach (var wall in _walls)
+            if (other.gameObject.layer == LayerMask.NameToLayer("Character"))
             {
-                wall.Activate();
+                foreach (var wall in _walls)
+                {
+                    wall.Activate();
+                }
             }
         }
     }
