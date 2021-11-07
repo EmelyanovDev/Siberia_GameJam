@@ -1,13 +1,26 @@
-using System;
 using UnityEngine;
 
-public class StoneTrigger : MonoBehaviour
+namespace Game_Asset.Scripts.Conundrums
 {
-    [SerializeField] private Rigidbody2D _stoneRigidBody;
-
-    private void OnTriggerEnter2D(Collider2D other)
+    public class StoneTrigger : MonoBehaviour
     {
-        if(other.gameObject.layer == LayerMask.NameToLayer("TriggerInitiator"))
-            _stoneRigidBody.bodyType = RigidbodyType2D.Dynamic;
+        [SerializeField] private Rigidbody2D _stoneRigidBody;
+        [SerializeField] private AudioSource _activateSound;
+        private bool _isActivate;
+
+        private void OnTriggerEnter2D(Collider2D other)
+        {
+            if (!_isActivate)
+            {
+                if (other.gameObject.layer == LayerMask.NameToLayer("TriggerInitiator"))
+                {
+                    _stoneRigidBody.bodyType = RigidbodyType2D.Dynamic;
+                    _activateSound.Play();
+                }
+
+                _isActivate = true;
+            }
+            
+        }
     }
 }

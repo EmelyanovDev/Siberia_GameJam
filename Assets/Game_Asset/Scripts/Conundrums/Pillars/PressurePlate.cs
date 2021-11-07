@@ -10,6 +10,7 @@ namespace Game_Asset.Scripts.Conundrums.Pillars
         [SerializeField] private float _bottomPositionOffset;
         [SerializeField] private float _pressingSpeed;
         [SerializeField] private float _pressDelay;
+        [SerializeField] private AudioSource _pressSound;
 
         private BoxCollider2D _trigger;
 
@@ -38,6 +39,7 @@ namespace Game_Asset.Scripts.Conundrums.Pillars
                 }
                 _targetPosition = _bottomPosition;
                 Invoke(nameof(SetTopTargetPosition), _pressDelay);
+                _pressSound.Play();
             }
         }
 

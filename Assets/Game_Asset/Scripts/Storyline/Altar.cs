@@ -11,7 +11,10 @@ public class Altar : MonoBehaviour
     [SerializeField] private float _starRotationSpeed;
     [SerializeField] private GameObject _wings;
     [SerializeField] private GameObject _panel;
-    [SerializeField] private GameObject _titles;    
+    [SerializeField] private GameObject _titles;
+
+    [SerializeField] private AudioSource _music;
+    [SerializeField] private AudioSource _background;
 
     [SerializeField] private CharacterFly _characterFly;
 
@@ -30,6 +33,9 @@ public class Altar : MonoBehaviour
                 Invoke(nameof(SetFly), 3f);
                 Invoke(nameof(SetPanel), 10f);
                 Invoke(nameof(SetTitles), 20);
+
+                _music.volume = 0.1f;
+                _background.volume = 1f;
             }
         }
     }

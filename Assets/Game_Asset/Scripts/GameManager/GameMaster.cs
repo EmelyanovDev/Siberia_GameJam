@@ -78,7 +78,6 @@ namespace Game_Asset.Scripts.GameManager
                 glitch.useFilter = false;
                 vignette.useFilter = false;
                 AllowedControl();
-                print("Fff");
             }));
             
             Died?.Invoke();

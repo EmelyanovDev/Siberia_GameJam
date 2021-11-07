@@ -13,6 +13,7 @@ namespace Game_Asset.Scripts.CheckPoint
 
         private SpriteRenderer _spriteRenderer;
         private Sprite _startSprite;
+        [SerializeField] private AudioSource _activateSound;
 
 
         private void Awake()
@@ -38,6 +39,7 @@ namespace Game_Asset.Scripts.CheckPoint
         private void OnActivated()
         {
             Activated?.Invoke(this);
+            _activateSound.Play();
         }
     }
 }

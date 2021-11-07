@@ -11,6 +11,7 @@ namespace Game_Asset.Scripts.Conundrums
         
         [SerializeField] private Animator _leverAnimator;
         [SerializeField] private bool _active = false;
+        [SerializeField] private AudioSource _clickSound;
         
         private static readonly int PlayActivation = Animator.StringToHash("PlayActivation");
 
@@ -23,6 +24,7 @@ namespace Game_Asset.Scripts.Conundrums
         {
             if (!_trigger.IsTrigger || _active) return;
             _leverAnimator.SetTrigger(PlayActivation);
+            _clickSound.Play();
             foreach (var element in controlled) element.Activate();
             _active = true;
         }

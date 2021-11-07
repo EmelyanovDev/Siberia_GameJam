@@ -1,5 +1,8 @@
+using System;
+using System.Collections;
 using Game_Asset.Scripts.Character;
 using Game_Asset.Scripts.GameManager;
+using Game_Asset.Scripts.PostEffects;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
@@ -8,6 +11,8 @@ public class Apple : MonoBehaviour
 {
     [SerializeField] private float _jumpOffDelay;
     [SerializeField] private float _jumpFromPlayerForce;
+    [SerializeField] private VignetteFilter _vignetteFilter;
+    [SerializeField] private GameObject _neutronStar;
     
     private Rigidbody2D _rigidbody;
     private CircleCollider2D _circleCollider;
@@ -16,7 +21,7 @@ public class Apple : MonoBehaviour
     {
         _rigidbody = GetComponent<Rigidbody2D>();
         _circleCollider = GetComponent<CircleCollider2D>();
-        
+
         Invoke(nameof(JumpOff), _jumpOffDelay);
     }
 
@@ -34,7 +39,48 @@ public class Apple : MonoBehaviour
 
             _circleCollider.enabled = false;
             GameMaster.Instance.AllowedControl();
-        }
             
+            _vignetteFilter.useFilter = true;
+            StartCoroutine(Timer(0.1f, 0f, 10f, f =>
+            {
+                _vignetteFilter.exp = f;
+            }));
+
+            StartCoroutine(Timer2(0.1f, () =>
+            {
+                StartCoroutine(Timer(0.1f, 10f, 0f, f =>
+                {
+                    _vignetteFilter.exp = f;
+                }));
+            }));
+            StartCoroutine(Timer2(0.2f, () =>
+            {
+                _vignetteFilter.useFilter = false;
+                _neutronStar.SetActive(true);
+            }));
+        }
     }
+    
+    IEnumerator Timer2(float duration, Action target)
+    {
+        float t = 0f;
+        while (t < duration)
+        {
+            t += Time.deltaTime;
+            yield return null;
+        }
+        target();
+    }
+    IEnumerator Timer(float duration, float begin, float end, Action<float> target)
+    {
+        float t = 0f;
+        while (t < duration)
+        {
+            t += Time.deltaTime;
+            target(Mathf.Lerp(begin, end, t / duration));
+            yield return null;
+        }
+        target(end);
+    }
+    
 }
