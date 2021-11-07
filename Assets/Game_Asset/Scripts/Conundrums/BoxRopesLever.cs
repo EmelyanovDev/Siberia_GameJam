@@ -2,42 +2,42 @@ using UnityEngine;
 
 namespace Game_Asset.Scripts.Conundrums
 {
-    [RequireComponent(typeof(Animator))]
-    public class BoxRopesLever : MonoBehaviour
+    public class BoxRopesLever : Conundrum
     {
-        [SerializeField] private Trigger _trigger;
-
-        private Animator _leverAnimator;
-
         private Vector3 _targetPosition;
-        [SerializeField] private Transform _targetTransform;
-        [SerializeField] private float _targetMoveSpeed;
-        [SerializeField] private Vector3 _bottomPosition;
+        [SerializeField] private Transform targetTransform;
+        [SerializeField] private float targetMoveSpeed;
+        [SerializeField] private Vector3 bottomPosition;
 
+        private Vector3 _startPosition;
         private void Start()
         {
-            _leverAnimator = GetComponent<Animator>();
-            _targetPosition = _targetTransform.position;
+            _startPosition = targetTransform.position;
+            _targetPosition = targetTransform.position;
         }
-
-        public void OnMouseDown()
-        {
-            if (!_trigger.IsTrigger) return;
-            _leverAnimator.SetTrigger("PlayActivation");
-        }
-
         private void Update()
         {
-            if (_targetTransform.position.y >= _targetPosition.y)
+            if (targetTransform.position.y >= _targetPosition.y)
             {
-                _targetTransform.position = Vector3.MoveTowards(_targetTransform.position, _targetPosition,
-                    _targetMoveSpeed * Time.deltaTime);
+                targetTransform.position = Vector3.MoveTowards(targetTransform.position, _targetPosition,
+                    targetMoveSpeed * Time.deltaTime);
             }
         }
 
         public void SetTargetPosition()
         {
-            _targetPosition += _bottomPosition;
+            _targetPosition += bottomPosition;
+        }
+
+        public override void Activate()
+        {
+            SetTargetPosition();
+        }
+
+        public override void Reset()
+        {
+            targetTransform.position = _startPosition;
+            Start();
         }
     }
 }

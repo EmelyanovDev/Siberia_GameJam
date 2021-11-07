@@ -8,7 +8,7 @@ namespace Game_Asset.Scripts.PostEffects
     {
         public Shader effectShader;
         protected Material Material;
-        [SerializeField] protected bool useFilter = true;
+        public bool useFilter = true;
 
         private void Awake()
         {
@@ -16,7 +16,7 @@ namespace Game_Asset.Scripts.PostEffects
             Init();
         }
 
-        protected virtual void Init()
+        internal virtual void Init()
         {
 
         }
