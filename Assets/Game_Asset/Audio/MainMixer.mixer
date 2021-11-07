@@ -15,7 +15,13 @@ AudioMixerController:
   m_SuspendThreshold: -80
   m_EnableSuspend: 1
   m_UpdateMode: 0
-  m_ExposedParameters: []
+  m_ExposedParameters:
+  - guid: 697ae030c971d5e4e9d6b0ff292232d1
+    name: Master
+  - guid: 2e8f52ee82a9b9a43b11e65935874b24
+    name: Music
+  - guid: f9098cdab26ff18489dcd3fccf51a9a0
+    name: Sound
   m_AudioMixerGroupViews:
   - guids:
     - 4ac3b159a74e0544fb3c9934ddc0c557
@@ -69,7 +75,7 @@ AudioMixerSnapshotController:
   m_AudioMixer: {fileID: 24100000}
   m_SnapshotID: 84d643572f3b75748ad28a777239a41e
   m_FloatValues:
-    697ae030c971d5e4e9d6b0ff292232d1: -10.345207
+    697ae030c971d5e4e9d6b0ff292232d1: 0
     2e8f52ee82a9b9a43b11e65935874b24: 0
   m_TransitionOverrides: {}
 --- !u!244 &2858082696324830101
