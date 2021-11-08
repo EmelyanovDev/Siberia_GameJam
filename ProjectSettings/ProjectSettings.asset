@@ -14,8 +14,8 @@ PlayerSettings:
   accelerometerFrequency: 60
   companyName: Gjvtyzq Hfcrkflre
   productName: Sumu
-  defaultCursor: {fileID: 2800000, guid: 534ea23301e6ce6469a44c6100d19a03, type: 3}
-  cursorHotspot: {x: 0, y: 0}
+  defaultCursor: {fileID: 2800000, guid: 79ca2b1c0bbcce446ab68bc9ed034dda, type: 3}
+  cursorHotspot: {x: 8, y: 8}
   m_SplashScreenBackgroundColor: {r: 0.06666667, g: 0.06666667, b: 0.06666667, a: 1}
   m_ShowUnitySplashScreen: 1
   m_ShowUnitySplashLogo: 1
@@ -46,8 +46,8 @@ PlayerSettings:
   m_HolographicTrackingLossScreen: {fileID: 0}
   defaultScreenWidth: 1024
   defaultScreenHeight: 768
-  defaultScreenWidthWeb: 960
-  defaultScreenHeightWeb: 600
+  defaultScreenWidthWeb: 1270
+  defaultScreenHeightWeb: 720
   m_StereoRenderingPath: 0
   m_ActiveColorSpace: 0
   m_MTRendering: 1
@@ -136,7 +136,7 @@ PlayerSettings:
     16:10: 1
     16:9: 1
     Others: 1
-  bundleVersion: 1.0
+  bundleVersion: a1.3
   preloadedAssets: []
   metroInputSource: 0
   wsaTransparentSwapchain: 0
